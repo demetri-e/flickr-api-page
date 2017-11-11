@@ -1,0 +1,74 @@
+
+
+body {
+  font-size: 16px;
+  font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+  min-width: 300px;
+  border-top: black 1em solid;
+  border-bottom: black 10em solid;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+header p {
+  margin-top: 0;
+  color: #B2AEAE;
+  
+}
+.nav {
+  width: 100%;
+  text-align: center;
+}
+
+.nav div {
+  box-sizing: border-box;
+  font-size: 1.25em;
+  padding: 0;
+  display: inline-block;
+  padding: .25em .5em;
+  border: 1px solid black;
+  margin: .375em .375em 0 .375em;
+  cursor: pointer;
+}
+.clear {
+  clear: both; }
+
+#content {
+  overflow: auto;
+  width: 96%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 2em;
+  position: relative;
+  max-width: 1100px;
+}
+
+#flickr {
+  display: block;
+}
+
+.gallery {
+  display: none;
+  padding-bottom: 2em;
+}
+
+.gallery p {
+  font-size: .5em;
+}
+
+.active {
+  background: black;
+  color: #fff;
+}
+
+
+

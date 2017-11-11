@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+  <script src="js/api.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tile.css">
+  <title>Flickr API Page</title>
+</head>
+<body>
+  <header>
+    <h1>Flickr API</h1>
+    <p>Choose your category</p>
+  </header>
+ 
+  <div class="nav">
+    <div class="travel-button button active">Travel</div>
+    <div class="bandw-button button">Monochrome</div>
+    <div class="landscape-button button">Landscapes</div>
+    <div class="cats-button button">Still Life</div>
+  </div>
+
+  <div id="content">
+    <div id="flickr" class="flick-panel gallery"></div>
+    <div id="flickr2" class="flick-panel gallery"></div>
+    <div id="flickr3" class="flick-panel gallery"></div>
+    <div id="flickr4" class="flick-panel gallery"></div>
+  </div>
+
+  <script>
+  $('.travel-button').on('click', function() {
+    $('.flick-panel').hide();
+    $('#flickr').show();
+  })
+  </script>
+  <script>
+    $('.cats-button').on('click', function() {
+      $('.flick-panel').hide();
+      $('#flickr2').show();
+    })
+  </script>
+  <script>
+    $('.bandw-button').on('click', function() {
+      $('.flick-panel').hide();
+      $('#flickr3').show();
+    })
+  </script>
+  <script>
+    $('.landscape-button').on('click', function() {
+      $('.flick-panel').hide();
+      $('#flickr4').show();
+    })
+  </script>
+  <script>
+  $('.button').on('click', function() {
+    $('.button').removeClass('active');
+    $(this).addClass('active');
+  });
+  </script>
+  
+</body>
+</html>
